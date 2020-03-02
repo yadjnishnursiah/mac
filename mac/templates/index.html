@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Eat' Cupcakes - Home</title>
+    <meta name= viewport content= "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/cupcake.png">
+
+<style>
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 20px;
+  overflow-x: hidden;
+  color: white;
+  font-family: 'Flamenco', cursive;
+}
+
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images5.alphacoders.com/903/903153.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.clearfix:after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row{
+  max-width: 1750px;
+  margin: 0 auto;
+}
+
+.logo{
+  height: 140px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+}
+
+.main-nav li a{
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+  width: 1750px;
+  padding: 0 2%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full{
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+  background-color: #ffc0cb;
+}
+
+.btn-full1{
+  background-color: transparent;
+  color: #FFA500;
+  border: 1px solid #FFA500;
+}
+
+.btn-full1:hover{
+  background-color: #000000;
+}
+
+
+.colorchange{
+  animation: colorchangecupcakes 1s infinite;
+}
+
+@keyframes colorchangecupcakes {
+  0%{color: #00bd9b;}
+  25%{color:#bf55ec;}
+  50%{color: #fd7359;}
+  100%{ color:#bf55ec;}
+}
+
+.mobile-icon{display: none;}
+
+.colorchange1{
+  animation: colorchangecupcakes1 1s infinite;
+}
+
+@keyframes colorchangecupcakes1 {
+  0%{color: #ffc0cb;}
+  25%{color:#000000;}
+  50%{color: #ffffff;}
+  100%{ color:#ffc0cb;}
+}
+
+@media only screen and (max-width: 1750px){
+  .main-content-header{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row{
+    width: 100%;
+    padding: 0 2%
+  }
+}
+
+@media only screen and (max-width: 998px){
+  h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+  h1{font-size: 180%;}
+
+  .main-nav{display: none;}
+
+  .mobile-icon{
+    display: inline-block;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .main-nav{
+    float: left;
+  }
+
+  .main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+
+  h1{font-size: 110%;}
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background-color: #710627;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 0px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #F19A3E;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FDF0D5;
+  margin: 0 2 10px;
+  padding: 0;
+  transition: ease 1s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 1s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #F0544F;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.clock {
+  position: absolute;
+  top: 19%;
+  right: -0.9%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #DEB841;
+  font-size: 20px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}
+
+</style>
+
+</head>
+  <body>
+    <header>
+      <nav>
+        <div class="row clearfix">
+          <img src="https://webstockreview.net/images600_/shop-clipart-cake-shop-17.png" class="logo">
+
+          <ul class="main-nav animated flip" id="check-class">
+            <li><a href="/shop/contact">
+            Contact Us</a></li>
+            <li><a href="/shop/about">About Us</a></li>
+        {% if request.user.is_authenticated %}
+        
+        <li><a href="{% url 'logout' %}" role="button">{{request.user}} - Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}" role="button">Log in</a></li>
+        {% endif %}
+
+          </ul>
+          <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+        </div>
+      </nav>
+
+      <b><div id="MyClockDisplay" class="clock" onload="showTime()"></div></b>
+
+      <div class="main-content-header">
+        <h1>WELCOME TO <span class="colorchange">EAT' CUPCAKES</span>.<br>
+          HOUSE OF CAKE LOVERS</h1>
+        <a href="/shop" class="btn btn-full">View Shop</a>
+        <a href="/blog" class="btn btn-full1">View Blog</a>
+      </div>
+    </header>
+   
+    <script type="text/javascript">
+
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+    }
+
+  </script>
+  <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+            session = "PM";
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+        setTimeout(showTime, 1000);
+    }
+    showTime();
+    
+    </script>
+  
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="https://www.facebook.com/login.php"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="/">Home</a>
+
+        <a href="/shop/privacy">Privacy</a>
+
+        <a href="/shop/faq">FAQ</a>
+
+      </p>
+
+      <p>Eat' Cupcakes &copy; 2020 | &#9743; +230 5905 6329 | &#9993; yadjnishnursiah@gmail.com</p>
+    </div>
+
+  </footer>
+
+
+  </body>
+</html>
